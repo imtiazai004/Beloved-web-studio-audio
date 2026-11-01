@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wedding Nasheed</title>
+<style>
+html,body{margin:0;height:100%;background:transparent;overflow:hidden}
+button{all:unset;display:block;width:100%;height:100%;cursor:pointer;-webkit-tap-highlight-color:transparent}
+</style>
+</head>
+<body>
+<button id="tap" aria-label="Play or pause the wedding nasheed"></button>
+<audio id="nasheed" src="The%20Way%20of%20the%20Tears.mp3" preload="none" loop></audio>
+<script>
+var audio = document.getElementById('nasheed');
+document.getElementById('tap').addEventListener('click', function () {
+  if (audio.paused) { audio.play(); } else { audio.pause(); }
+});
+</script>
+</body>
+</html>
